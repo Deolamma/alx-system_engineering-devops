@@ -1,0 +1,2 @@
+#!/bin/bash
+if [! su == guillame]; then chown betty hello
