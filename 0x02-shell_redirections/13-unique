@@ -1,2 +1,2 @@
 #!/bin/bash
-cat list | grep -o'\w*' | uniq
+sort | uniq -u
