@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# Prints "Best School" until 9th index, it then prints "Best School" and "Hi"
+COUNT=1
+while [ $COUNT -le 10 ]; do
+	if [ $COUNT -eq 9 ]
+	then
+		echo "Best School"
+		echo "Hi"
+	else
+		echo "Best School"
+	fi
+	((COUNT++));
+done
