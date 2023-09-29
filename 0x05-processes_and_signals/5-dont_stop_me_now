@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # Kill a running process in another terminal from another
 PID=$(pgrep -f  "4-to_infinity_and_beyond")
-echo "$PID"
 kill "$PID"
