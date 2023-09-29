@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Prints all processes including those that do not have a TTY
+#+ It prints this in a human readable format
+echo -e "$(ps -auxf)" | grep bash
