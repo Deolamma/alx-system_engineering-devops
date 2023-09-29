@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# prints the pid of processes that contains the word bash
+for PID_DIR in /proc/*/; do
+	PID=$(basename "$PID_DIR")
+	if [[ $PID =~ ^[0-9]+$ ]]
+	then
+		NAME=$(cat "$PID_DIR/comm")
+		if [[ $NAME == "bash" ]]
+		then
+			echo "$PID $NAME"
+		fi
+	fi
+done
