@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Killing a process by force
+PID=$(pgrep -f "highlander")
+kill -SIGKILL "$PID"
